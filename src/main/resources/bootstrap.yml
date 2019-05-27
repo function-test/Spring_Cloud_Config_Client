@@ -1,0 +1,17 @@
+spring:
+  profiles:
+    active: jdbc
+  cloud:
+    config:
+      uri: http://127.0.0.1:9999
+      username: root
+      password: dbalxpzm
+      label: master
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
+
+        
